@@ -1,27 +1,47 @@
 const url = "https://pokeapi.co/api/v2/pokemon/"
-const lvl1 = [1,2,3,4,5,6,7,8,9]
-const lvl2 = [10,11,12,13,14,15,16,17,18,19]
-const lvl3 = [101,102,103,104,105,106,107,108,109]
 
-const pokePic = document.getElementById("pic")
-const start = document.getElementById("play")
+let name= "";
 
-start.addEventListener("click",getPoke())
+const pokePic = document.getElementById("pic");
+const play = document.getElementById("play");
+const info = document.getElementById("rules");
+const awnser = document.getElementById("btn");
+const input = document.getElementById("text");
 
-function setLvl(){
-   getPoke(lvl1)
-}
+info.addEventListener('click', function(){
+    console.log("clicked info")
+})
 
-function getPoke(){
-    fetch(url + (Math.floor(Math.random()*898)))
+play.addEventListener('click', function(){
+    getPoke(Math.floor(Math.random()*898))
+})
+
+
+function getPoke(num){
+    fetch(url + num)
         .then( res => res.json())
         .then( parseJson => displayPoke(parseJson))
 }
-    
+
 function displayPoke(poke){
-    console.log(poke.species.name);
-    console.log(pokePic.innerHTML);
-    pokePic.src = poke.sprites.front_default
+    pokePic.src = poke.sprites.front_default;
+    let name = poke.species.name
+    console.log(name);
+
+    awnser.addEventListener('click', function checkAnswer(e) {
+        console.log(input.value);
+        if(input.value.toLowerCase() === name){
+            console.log("correct");
+            e.preventDefault();
+        }
+        else{
+            console.log("wrong");
+            e.preventDefault();
+        }
+        
+    })
 }
-     
+
+
+
 
