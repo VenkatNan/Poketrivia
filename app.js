@@ -1,7 +1,7 @@
 const url = "https://pokeapi.co/api/v2/pokemon/"
 
 let pokeName= "";
-let points = 8;
+let points = 5;
 
 const pokePic = document.getElementById("pic");
 const play = document.getElementById("play");
@@ -47,15 +47,15 @@ awnser.addEventListener('click', function checkAnswer(e) {
 })
 
 function checkWin() {
-    if(points = 10){
-        console.log(win);
+    if(points === 10){
+        console.log("win");
     }
-
     else{
         input.value = "";
+        console.log("new poke");
         getPoke(Math.floor(Math.random()*898))
     }
-    Event.preventDefault()
+    
 }
 
 
