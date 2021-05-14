@@ -3,21 +3,20 @@ const url = "https://pokeapi.co/api/v2/pokemon/"
 let pokeName= "";
 let points = 5;
 
+const body = document.querySelector("body")
 const pokePic = document.getElementById("pic");
-const play = document.getElementById("play");
-const info = document.getElementById("rules");
 const awnser = document.getElementById("btn");
 const input = document.getElementById("text");
 const pointCount = document.getElementById('points')
 
-info.addEventListener('click', function(){
-    console.log("clicked info")
-})
 
-play.addEventListener('click', function(){
+document.getElementById("play").addEventListener('click', function(){
     getPoke(Math.floor(Math.random()*898))
 })
 
+document.getElementById("info").addEventListener('click', function(){
+    console.log("clicked info")
+})
 
 function getPoke(num){
     fetch(url + num)
@@ -49,8 +48,9 @@ awnser.addEventListener('click', function checkAnswer(e) {
 function checkWin() {
     if(points === 10){
         console.log("win");
+        body.classList.add("game-over")
     }
-    else{
+    else{ 
         input.value = "";
         console.log("new poke");
         getPoke(Math.floor(Math.random()*898))
