@@ -1,9 +1,40 @@
+body{
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9f43c073-7631-4f98-8b19-ff63a50e1660/d7rw72u-ed83b96f-940c-4c58-814f-fb524d565c07.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlmNDNjMDczLTc2MzEtNGY5OC04YjE5LWZmNjNhNTBlMTY2MFwvZDdydzcydS1lZDgzYjk2Zi05NDBjLTRjNTgtODE0Zi1mYjUyNGQ1NjVjMDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jgzYoeCbG8gOzeDi0pIA7bkOMm8OyvrQAGsXLw-lGCs");
 
-a { text-decoration: none; color:red; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; }
+}
+.container{
+  background-color: rgba(88, 88, 88, 0.726);
+  display: block;
+  
+}
+.container ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container li{
+  float: left;
+}
+.container li a{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.modatbtn{
+  color: white;
+  font-size: large;
+}
+
+.container a:hover{
+    background-color: rgb(184, 0, 0);
+}
+
+.button{ 
+  text-decoration: none;
+ }
+
 
 .title{
     display: flex;
@@ -12,12 +43,15 @@ a:hover, a:active { text-decoration: none; }
     margin-top: 30px;
 }
 #pointBox{
-    display: flex;
-    float: right;
-    margin-right: 45px;
-    
+  display: flex;
+  float: right;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
 }
 
+#play{
+  visibility: visible;
+}
 
 
 .level-winner {

@@ -8,10 +8,16 @@ const pokePic = document.getElementById("pic");
 const awnser = document.getElementById("btn");
 const input = document.getElementById("text");
 const pointCount = document.getElementById('points')
+const play = document.getElementById("play")
 
 
-document.getElementById("play").addEventListener('click', function(){
+play.addEventListener('click', function(){
     getPoke(Math.floor(Math.random()*898))
+    if (play.style.display === "none") {
+        play.style.display = "block";
+      } else {
+        play.style.display = "none";
+      }
 })
 
 function getPoke(num){
@@ -27,28 +33,24 @@ function displayPoke(poke){
 }
 
 awnser.addEventListener('click', function checkAnswer(e) {
-    console.log(input.value);
     if(input.value.toLowerCase() === pokeName){
-        console.log("correct");
         points ++
         pointCount.innerText = points
         checkWin()
     }
     else{
-        console.log(`${pokeName} is not ${input.value}`);
-        console.log("wrong");
+     console.log("wrong");
     }
     e.preventDefault()
 })
 
 function checkWin() {
     if(points === 10){
-        console.log("win");
-        window.confirm()
+        
+        body.classList.add("game-over")
     }
     else{ 
         input.value = "";
-        console.log("new poke");
         getPoke(Math.floor(Math.random()*898))
     }
     
