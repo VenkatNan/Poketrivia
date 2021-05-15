@@ -4,11 +4,11 @@
 
 ## Technology used
 
-*Bootstrap
+* Bootstrap
 * https://fontmeme.com/pokemon-font/
-Javascript
-Html
-Css
+* Javascript
+* Html
+* Css
 
  ## About
  
