@@ -1,7 +1,7 @@
 const url = "https://pokeapi.co/api/v2/pokemon/"
 
 let pokeName= "";
-let points = 8;
+let points = 0;
 
 const body = document.querySelector("body")
 const pokePic = document.getElementById("pic");
