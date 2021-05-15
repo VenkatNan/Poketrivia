@@ -4,8 +4,8 @@
 
 ## Technology used
 
-Bootstrap
-https://fontmeme.com/pokemon-font/
+*Bootstrap
+* https://fontmeme.com/pokemon-font/
 Javascript
 Html
 Css
