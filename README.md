@@ -13,4 +13,4 @@ Css
 
  ## Process
  ---
-![wireframe](/img/background.png)
+![wireframe](/img/Screen%20Shot%202021-05-14%20at%2010.32.10%20PM.png)
