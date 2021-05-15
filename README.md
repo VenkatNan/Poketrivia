@@ -1,7 +1,4 @@
-# Poketrivia
-
-[PokeTrivia](https://venkatnan.github.io/Poketrivia/index.html) 
-PokeTrivia is a game that, upon start up will display a randomly generated pokemon. You have to try and guess that Pokemons name, and when you do, you get a point. once you get 10 points you win!
+[PokeTrivia](https://venkatnan.github.io/Poketrivia/index.html) is a game that, upon start up will display a randomly generated pokemon. You have to try and guess that Pokemons name, and when you do, you get a point. once you get 10 points you win!
 
 ## Technology used
 ---
@@ -16,4 +13,4 @@ Css
 
  ## Process
  ---
-
+![wireframe](/img/background.png)
