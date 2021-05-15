@@ -20,6 +20,6 @@
  
  ## Process
  
- [![myw wireframe](img/Screen%20Shot%202021-05-14%20at%2010.32.10%20PM.png "Hello World")][about.gitlab.com]
+ [![my wireframe](img/Screen%20Shot%202021-05-14%20at%2010.32.10%20PM.png "Hello World")][about.gitlab.com]
  
 
