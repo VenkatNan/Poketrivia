@@ -12,6 +12,7 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
 }
 .container li{
   float: left;
@@ -19,7 +20,7 @@ body{
 .container li a{
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px;
   text-decoration: none;
 }
 .modatbtn{
@@ -29,6 +30,7 @@ body{
 
 .container a:hover{
     background-color: rgb(184, 0, 0);
+    color: white;
 }
 
 .button{ 
@@ -45,14 +47,45 @@ body{
 #pointBox{
   display: flex;
   float: right;
+  background-color: rgb(184, 0, 0);
   color: white;
   font-family: 'Press Start 2P', cursive;
 }
 
 #play{
   visibility: visible;
+  font-family: 'Press Start 2P', cursive;
+  padding:10px ;
+  background-color: white;
+  color: rgb(227, 27, 12);
+}
+#play:hover{
+  background-color: rgb(227, 27, 12);
+  color: white;
 }
 
+#startBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submitBtn{
+  margin-top: 5px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: white;
+  color: rgb(227, 27, 12);
+}
+#submitBtn:hover{
+  background-color: rgb(227, 27, 12);
+  color: white;
+}
+.pokeCard{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .level-winner {
     position: absolute;

@@ -15,7 +15,7 @@
     <ul >
       <li>
         <a class="button" href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(184, 0, 0)" class="bi bi-house-fill" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-house-fill" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
               <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
           </svg>
@@ -24,6 +24,7 @@
       <li id="modalbtn">
         <a  data-toggle="modal" data-target="#exampleModalCenter" style="color: white;"> How to play </a>
       </li>
+
       <li style="float:right">
         <div id="pointBox">
           <a>Points:</a>
@@ -34,18 +35,15 @@
   </div>
 
 
-  <div>
-
     <div class="title">
         <a href="https://fontmeme.com/pokemon-font/"> <img src="https://fontmeme.com/permalink/210514/9d11e6f2085af86b023f8472828d5449.png" alt="pokemon-font"></a>
     </div>
-   
+    <div id="startBtn">
+      <button id="play"> Start Game? </button>
+    </div>
 
-    <button id="play" >start game</button>
-    <div id="madeModal">
-      
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialoge" aria-labelledby="Rules" aria-hidden="true">
+  <div id="madeModal">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialoge" aria-labelledby="Rules" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -64,21 +62,21 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
-    <div class="trivia">
-        <div id="question">
-            <h2>Name This Pokemon!</h2>
+    <div class="pokeCard">
+      <div class="card text-center" style="width: 18rem; border: 3px solid rgb(227, 27, 12);">
+        <img id="pic" class="card-img-top" src="https://orig00.deviantart.net/0945/f/2011/237/0/8/who__s_that_pokemon__by_amitlu89-d47rmjf.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Name This Pokemon!</h5>
         </div>
-
-        <img id="pic" src="">
-        
-        <form>
+        <div class="card-body">
+          <form>
             <input id="text" type="text">
-            <input id="btn" type="submit">
-        </form>
+            <input id="submitBtn" type="submit">
+          </form>
+        </div>
+      </div>
     </div>
 
     <section class="level-winner">

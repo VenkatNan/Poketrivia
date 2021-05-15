@@ -5,7 +5,7 @@ let points = 8;
 
 const body = document.querySelector("body")
 const pokePic = document.getElementById("pic");
-const awnser = document.getElementById("btn");
+const awnser = document.getElementById("submitBtn");
 const input = document.getElementById("text");
 const pointCount = document.getElementById('points')
 const play = document.getElementById("play")
@@ -40,6 +40,7 @@ awnser.addEventListener('click', function checkAnswer(e) {
     }
     else{
      console.log("wrong");
+     window.alert("Wrong Answer, Try again")
     }
     e.preventDefault()
 })
