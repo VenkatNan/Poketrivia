@@ -39,7 +39,6 @@ awnser.addEventListener('click', function checkAnswer(e) {
         checkWin()
     }
     else{
-     console.log("wrong");
      window.alert("Wrong Answer, Try again")
     }
     e.preventDefault()
@@ -47,7 +46,6 @@ awnser.addEventListener('click', function checkAnswer(e) {
 
 function checkWin() {
     if(points === 10){
-        
         body.classList.add("game-over")
     }
     else{ 
