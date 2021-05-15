@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poke Trivia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <div class="container">
-    <ul >
+    <ul>
       <li>
         <a class="button" href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-house-fill" viewBox="0 0 16 16">
@@ -28,7 +29,7 @@
       <li style="float:right">
         <div id="pointBox">
           <a>Points:</a>
-          <a id='points'>0</a>
+          <a id='points'>8</a>
         </div>
       </li>
     </ul>
@@ -52,7 +53,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="font-family: 'Nova Flat', cursive;">
               Once you hit Start game, you will be given a randomly generated Pokemon. If you manage to correctly input the name, you earn a point. get to ten points to win.
             </div>
             <div class="modal-footer">
@@ -68,7 +69,7 @@
       <div class="card text-center" style="width: 18rem; border: 3px solid rgb(227, 27, 12);">
         <img id="pic" class="card-img-top" src="https://orig00.deviantart.net/0945/f/2011/237/0/8/who__s_that_pokemon__by_amitlu89-d47rmjf.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Name This Pokemon!</h5>
+          <h5 class="card-title" style="font-family: 'Nova Flat', cursive;">Name This Pokemon!</h5>
         </div>
         <div class="card-body">
           <form>
@@ -80,8 +81,14 @@
     </div>
 
     <section class="level-winner">
-      <h1 class="title --xl-large">Winner!</h1>
-      <p>Play Again? <a href="index.html">home</a></p>
+      <h1 class="title --xl-large" style="font-family: 'Nova Flat', cursive;">Winner!</h1>
+      <h5 class="title --small" style="font-family: 'Nova Flat', cursive;"> Play Again? </h5>
+       <a class="button" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(255, 242, 62)" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+        </svg>
+      </a>
     </section>
 
 
